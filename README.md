@@ -10,19 +10,19 @@ This project is a mock freelance project, creating a web site for a new co-worki
 
 #### Sketches:
 
-Landing (Desktop) | Landing (Tablet)
+Landing page (Desktop) | Landing (Tablet)
 :-----------------------: | :-----------------------:
-![Sketch 1](img/front.png) | ![Sketch 2](img/entrance.png)
+![Sketch 1](img/sketch-landing-desktop.jpg) | ![Sketch 2](img/sketch-landing-tablet.jpg)
 Landing (Mobile) | About Us
-![Sketch 3](img/sketch3.png) | ![Sketch 4](img/sketch4.png)
+![Sketch 3](img/sketch-landing-mobile.jpg) | ![Sketch 4](img/sketch-about-us.jpg)
 Amenities | How to Join
-![Sketch 5](img/sketch5.png) | ![Sketch 6](img/sketch6.png)
+![Sketch 5](img/sketch-amenities.jpg) | ![Sketch 6](img/sketch-membership.jpg)
 
 
 #### Wireframes:
-
-![Wireframe 1](img/frame1.png) | ![Wireframe 2](img/frame2.png)
+Landing page (Desktop) | Landing (Tablet)
 :-----------------------: | :-----------------------:
+![Wireframe 1](img/wireframe-landing-desktop.png) | ![Wireframe 2](img/wireframe-landing-tablet.png)
 ![Wireframe 3](img/frame4.png) | ![Wireframe 4](img/frame4.png)
 
 #### Prototypes:
@@ -39,14 +39,12 @@ Amenities | How to Join
 ![Page 3](img/final3.png) | ![Page 4](img/final1.png)
 
 
-## User Profiles
+## User Stories
+![User Story 1](img/userstories1.jpg)
 
-User Profile 1 | User Profile 2 | User Profile 3
------------- | ------------- | -------------
-Gordon Cole | Marnie Rutland | Ransome Stoddard
-Freelance web developer | Small startup manager | Employer
-"Hi, I'm Gordon" | "Hi, I'm Marnie" | "Hi, I'm Ranse."
-blah blee bloo bloo | blah bloo bloo bah | blee bloo blee blee
+![User Story 2](img/userstories2.jpg)
+
+![User Story 3](img/userstories3.jpg)
 
 
 ## Technologies Employed
