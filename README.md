@@ -23,7 +23,10 @@ Amenities | How to Join
 Landing page (Desktop) | Landing (Tablet)
 :-----------------------: | :-----------------------:
 ![Wireframe 1](img/wireframe-landing-desktop.png) | ![Wireframe 2](img/wireframe-landing-tablet.png)
-![Wireframe 3](img/frame4.png) | ![Wireframe 4](img/frame4.png)
+About Us | Amenities
+![Wireframe 3](img/wireframe-about-us.png) | ![Wireframe 4](img/wireframe-amenities.png)
+Membership |
+![Wireframe 5](img/wireframe-membership.png) |
 
 #### Prototypes:
 
