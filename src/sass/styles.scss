@@ -4,4 +4,50 @@
 
 body {
   font-family: 'Comfortaa', sans-serif;
+  @include bg-conc();
+}
+
+.header {
+  @include flexbox(row, flex-start, center);
+  @include bg-pink();
+  @include shadow();
+  border: 1px solid black;
+  height: 125px;
+  position: fixed;
+  padding: 5px;
+  padding-left: 50px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header-box {
+  margin: 5px;
+  height: 115px;
+}
+
+.logo-container {
+  img {
+    height: 100%;
+  }
+}
+
+.nav-container {
+  @include flexbox(row, space-between, center);
+}
+
+.nav-button {
+  @include flexbox(row, center, center);
+  @include bg-conc();
+  margin: 0 5px;
+  width: 125px;
+  height: 75px;
+  border: 2px solid darkgrey;
+  border-radius: 30%;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  a {
+    color: black;
+    text-decoration: none;
+  }
 }

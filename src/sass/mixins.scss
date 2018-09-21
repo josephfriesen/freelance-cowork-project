@@ -1,0 +1,20 @@
+@mixin flexbox($dir, $mainaxis, $crossaxis) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $mainaxis;
+  align-items: $crossaxis;
+}
+
+@mixin bg-pink() {
+  background-color: $pink;
+  background-image: url('../assets/images/textures/french-stucco.png');
+}
+
+@mixin bg-conc() {
+  background-image: url('../assets/images/textures/concrete-texture.png');
+}
+
+@mixin shadow() {
+  box-sizing: border-box;
+  box-shadow: 0px 0px 3px 3px darkgrey inset;
+}
