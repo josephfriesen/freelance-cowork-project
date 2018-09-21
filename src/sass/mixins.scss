@@ -5,6 +5,10 @@
   align-items: $crossaxis;
 }
 
+@mixin center() {
+  @include flexbox(row, center, center);
+}
+
 @mixin bg-pink() {
   background-color: $pink;
   background-image: url('../assets/images/textures/french-stucco.png');
@@ -17,4 +21,26 @@
 @mixin shadow() {
   box-sizing: border-box;
   box-shadow: 0px 0px 3px 3px darkgrey inset;
+}
+
+@mixin pinkbox() {
+  @include bg-pink();
+  @include shadow();
+}
+
+@mixin gridspan($row,$col) {
+  grid-row: span $row;
+  grid-column: span $col;
+}
+
+@mixin textstyle-dark($size) {
+  font-size: $size;
+  color: $yellow;
+  text-shadow: 2px 2px darkgrey;
+}
+
+@mixin textstyle-yel($size) {
+  font-size: $size;
+  color: $yellow;
+  text-shadow: 2px 2px darkgrey;
 }

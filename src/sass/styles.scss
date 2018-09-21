@@ -37,17 +37,50 @@ body {
 }
 
 .nav-button {
-  @include flexbox(row, center, center);
+  @include center;
   @include bg-conc();
   margin: 0 5px;
   width: 125px;
   height: 75px;
   border: 2px solid darkgrey;
   border-radius: 30%;
-  font-size: 1.25rem;
+  @include textstyle-dark(1.25rem);
   font-weight: bolder;
   a {
     color: black;
     text-decoration: none;
   }
+}
+
+.top-pushdown {
+  height: 115px;
+  width: 100%;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template: repeat(5, 100px) / repeat(3, 1fr);
+  grid-gap: $gutter-lg;
+  width: 1024px;
+  margin: $gutter-lg auto;
+}
+
+.banner {
+  @include flexbox(column, space-around, center);
+  @include gridspan(2,3);
+  @include pinkbox();
+  width: 100%;
+}
+
+.banner-logo {
+  height: calc(66.67% - 15px);
+  img {
+    height: 100%;
+  }
+}
+
+.banner-slogan {
+  @include center();
+  @include textstyle-yel(2rem);
+  height: calc(33.33% - 15px);
 }
