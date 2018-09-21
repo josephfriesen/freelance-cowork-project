@@ -19,6 +19,10 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 1;
+  @include mediaQuery(0px, 768px) {
+    @include flexbox(row, space-between, center);
+  }
 }
 
 .footer {
@@ -27,7 +31,7 @@ body {
   bottom: 0;
   border: 1px solid darkgrey;
   height: 125px;
-  width: 100vw;
+  width: 100%;
 }
 
 .header-box {
@@ -43,6 +47,12 @@ body {
 
 .nav-container {
   @include flexbox(row, space-between, center);
+  @include mediaQuery(0px, 768px) {
+    @include flexbox(column, center, center);
+    position: absolute;
+    top: 125px;
+    right: 20px;
+  }
 }
 
 .nav-button {
@@ -70,12 +80,31 @@ body {
   width: 100%;
 }
 
+.mobile-menu {
+  display: none;
+  padding: 20px;
+  height: 115px;
+  width: 115px;
+  svg {
+    fill: $green;
+    height: 75px;
+    width: 75px;
+  }
+  @include mediaQuery(0px, 768px) {
+    @include center();
+  }
+}
+
 .content-wrapper {
   display: grid;
   grid-template: repeat(5, 100px) / repeat(3, 1fr);
   grid-gap: $gutter-lg;
   width: 1024px;
   margin: $gutter-lg auto;
+  @include mediaQuery(0px, 1024px) {
+    grid-template: repeat(4, 300px) / repeat(1, 100%);
+    width: 100%;
+  }
 }
 
 .banner {
@@ -83,6 +112,11 @@ body {
   @include gridspan(2,3);
   @include pinkbox();
   width: 100%;
+  @include mediaQuery(0px, 1024px) {
+    @include gridspan(1,1);
+    @include flexbox(row, center, center);
+    height: 300px;
+  }
 }
 
 .banner-logo {
@@ -90,18 +124,40 @@ body {
   img {
     height: 100%;
   }
+  @include mediaQuery(0px, 1024px) {
+    @include center();
+    height: 100%;
+    width: 40%;
+    img {
+      height: 100%;
+    }
+  }
 }
 
 .banner-slogan {
   @include center();
   @include textstyle(2rem, $yellow);
   height: calc(33.33% - 15px);
+  @include mediaQuery(0px, 1024px) {
+    @include center();
+    height: 100%;
+    width: 60%;
+    p {
+      @include textstyle($green, 1em);
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
 }
 
 .content-box {
   @include flexbox(column, center, center);
   @include gridspan(3,1);
   @include pinkbox();
+  @include mediaQuery(0px, 1024px) {
+    @include flexbox(row, space-between, center);
+    @include gridspan(1,1);
+  }
 }
 
 .content-box-sidebar {
@@ -110,6 +166,10 @@ body {
   border: 1px solid darkgrey;
   width: 100%;
   height: $gutter-lg;
+  @include mediaQuery(0px, 1024px) {
+    width: 50px;
+    height: 100%;
+  }
 }
 
 .content-box-img {
@@ -139,6 +199,15 @@ body {
       @include flexbox(column, flex-end, center);
     }
   }
+  @include mediaQuery(0px, 1024px) {
+    height: 300px;
+    width: 400px;
+    img {
+      width: 150%;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
 }
 
 .content-box-text {
@@ -149,5 +218,13 @@ body {
   p {
     @include textstyle(1.25rem,$yellow);
     padding: 15px;
+  }
+  @include mediaQuery(0px, 1024px) {
+    height: 100%;
+    @include textstyle(2rem, $yellow);
+    width: calc(100% - 450px);
+    p {
+      text-align: center;
+    }
   }
 }
