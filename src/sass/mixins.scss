@@ -14,6 +14,10 @@
   background-image: url('../assets/images/textures/french-stucco.png');
 }
 
+@mixin bg-dark() {
+  background-image: url('../assets/images/textures/pink-dust.png');
+}
+
 @mixin bg-conc() {
   background-image: url('../assets/images/textures/concrete-texture.png');
 }
@@ -33,14 +37,8 @@
   grid-column: span $col;
 }
 
-@mixin textstyle-dark($size) {
+@mixin textstyle($size,$color) {
   font-size: $size;
-  color: $yellow;
-  text-shadow: 2px 2px darkgrey;
-}
-
-@mixin textstyle-yel($size) {
-  font-size: $size;
-  color: $yellow;
+  color: $color;
   text-shadow: 2px 2px darkgrey;
 }
