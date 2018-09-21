@@ -5,13 +5,13 @@
 body {
   font-family: 'Comfortaa', sans-serif;
   @include bg-conc();
+  margin: 0;
 }
 
 .header {
   @include flexbox(row, flex-start, center);
-  @include bg-pink();
-  @include shadow();
-  border: 1px solid black;
+  @include pinkbox();
+  border: 1px solid darkgrey;
   height: 125px;
   position: fixed;
   padding: 5px;
@@ -19,6 +19,15 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+}
+
+.footer {
+  @include center();
+  @include pinkbox();
+  bottom: 0;
+  border: 1px solid darkgrey;
+  height: 125px;
+  width: 100vw;
 }
 
 .header-box {
@@ -49,6 +58,10 @@ body {
   a {
     color: black;
     text-decoration: none;
+    &:hover {
+      transform: skew(-10deg,10deg);
+      color: $green;
+    }
   }
 }
 
