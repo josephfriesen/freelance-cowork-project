@@ -72,3 +72,6 @@ $ npm run start
 ### Legal
 
 Copyright (c) 2018 [Joseph Friesen](mailto:friesen.josephc@gmail.com)
+
+French Stucco background texture courtesy of https://www.transparenttextures.com
+Pink Dust and Concrete background textures courtesy of https://www.subtlepatterns.com
