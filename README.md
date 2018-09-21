@@ -37,7 +37,7 @@ Membership |
 
 #### Final Design:
 
-![Page 1](src/assets/images/final2.png) | ![Page 2](src/assets/images/final4.png)
+![Landing Page](src/assets/images/screenshot-landing-page-desktop.png) | ![Page 2](src/assets/images/final4.png)
 ---------------------- | -----------------------
 ![Page 3](src/assets/images/final3.png) | ![Page 4](src/assets/images/final1.png)
 
